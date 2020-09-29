@@ -9,20 +9,8 @@ func main() {
 	var dia int
 	var signo string
 
-	fmt.Scan(&mes)
-
-	if mes < 1 || mes > 12 {
-		println("Mes incorrecto")
-		return
-	}
-
-	fmt.Print("Ingrese dia: ")
 	fmt.Scan(&dia)
-
-	if dia < 1 {
-		println("Dia invalido")
-		return
-	}
+	fmt.Scan(&mes)
 
 	switch mes {
 	case 1:
@@ -170,5 +158,5 @@ func main() {
 		break
 	}
 
-	fmt.Println("Tu signo es: ", signo)
+	fmt.Println(signo)
 }
